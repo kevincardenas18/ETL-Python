@@ -2,7 +2,7 @@ import traceback
 from util.db_conn import Db_Connection
 import pandas as pd
 
-def extraer_country ():
+def extraer_address ():
 
     try:
         type = 'postgres'
@@ -19,8 +19,8 @@ def extraer_country ():
         elif ses_db_trx == -2:
             raise Exception("Error al establecer la conexión de pruebas")        
         
-        countries = pd.read_sql('SELECT * FROM country',ses_db_trx)
-        return countries
+        addresses = pd.read_sql('SELECT * FROM address',ses_db_trx)
+        return addresses
 
     except:
         traceback.print_exc()

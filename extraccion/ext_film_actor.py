@@ -2,7 +2,7 @@ import traceback
 from util.db_conn import Db_Connection
 import pandas as pd
 
-def extraer_country ():
+def extraer_film_actor ():
 
     try:
         type = 'postgres'
@@ -19,8 +19,8 @@ def extraer_country ():
         elif ses_db_trx == -2:
             raise Exception("Error al establecer la conexión de pruebas")        
         
-        countries = pd.read_sql('SELECT * FROM country',ses_db_trx)
-        return countries
+        film_actors = pd.read_sql('SELECT * FROM film_actor',ses_db_trx)
+        return film_actors
 
     except:
         traceback.print_exc()

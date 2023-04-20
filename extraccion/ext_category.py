@@ -5,7 +5,7 @@ def extraer_category ():
 
     try: 
         
-        filename = 'D:/tmp/vms/category.csv'
+        filename = 'C:/Users/kevin/VirtualBox VMs/tpm/vms/category.csv'
 
         categories = pd.read_csv(filename)
 
