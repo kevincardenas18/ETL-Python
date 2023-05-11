@@ -5,7 +5,7 @@ def extraer_language ():
 
     try: 
         
-        filename = 'C:/Users/kevin/VirtualBox VMs/tpm/vms/language.csv'
+        filename = 'D:/tpm/vms/language.csv'
 
         languages = pd.read_csv(filename)
 
